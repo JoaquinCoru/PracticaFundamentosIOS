@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		D2CED47E287B47AD0012802F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CED47D287B47AD0012802F /* AppDelegate.swift */; };
 		D2CED480287B47AD0012802F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CED47F287B47AD0012802F /* SceneDelegate.swift */; };
-		D2CED482287B47AD0012802F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CED481287B47AD0012802F /* ViewController.swift */; };
 		D2CED487287B47AE0012802F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2CED486287B47AE0012802F /* Assets.xcassets */; };
 		D2CED48A287B47AE0012802F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CED488287B47AE0012802F /* LaunchScreen.storyboard */; };
 		D2CED496287B48920012802F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CED494287B48920012802F /* LoginViewController.swift */; };
 		D2CED497287B48920012802F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2CED495287B48920012802F /* LoginViewController.xib */; };
 		D2FEFD22287CC73400F11358 /* DragonBallXibsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FEFD21287CC73400F11358 /* DragonBallXibsTests.swift */; };
+		D2FF74172882F52500C6355B /* HeroesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF74152882F52500C6355B /* HeroesTableViewController.swift */; };
+		D2FF74182882F52500C6355B /* HeroesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FF74162882F52500C6355B /* HeroesTableViewController.xib */; };
+		D2FF741C288301F200C6355B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF741A288301F200C6355B /* TableViewCell.swift */; };
+		D2FF741D288301F200C6355B /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FF741B288301F200C6355B /* TableViewCell.xib */; };
+		D2FF7420288307A900C6355B /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF741F288307A900C6355B /* UIImageViewExtension.swift */; };
+		D2FF742328831BED00C6355B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF742128831BED00C6355B /* DetailViewController.swift */; };
+		D2FF742428831BED00C6355B /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FF742228831BED00C6355B /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +37,6 @@
 		D2CED47A287B47AD0012802F /* DragonBallXibs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonBallXibs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CED47D287B47AD0012802F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2CED47F287B47AD0012802F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D2CED481287B47AD0012802F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D2CED486287B47AE0012802F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2CED489287B47AE0012802F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2CED48B287B47AE0012802F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,6 +44,13 @@
 		D2CED495287B48920012802F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		D2FEFD1F287CC73400F11358 /* DragonBallXibsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonBallXibsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2FEFD21287CC73400F11358 /* DragonBallXibsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallXibsTests.swift; sourceTree = "<group>"; };
+		D2FF74152882F52500C6355B /* HeroesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesTableViewController.swift; sourceTree = "<group>"; };
+		D2FF74162882F52500C6355B /* HeroesTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroesTableViewController.xib; sourceTree = "<group>"; };
+		D2FF741A288301F200C6355B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		D2FF741B288301F200C6355B /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		D2FF741F288307A900C6355B /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageViewExtension.swift; path = ../../../../../KeepCoding/04.IOS.FUNDAMENTOS/6/DragonBall/DragonBall/Extensions/UIImageViewExtension.swift; sourceTree = "<group>"; };
+		D2FF742128831BED00C6355B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D2FF742228831BED00C6355B /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +97,7 @@
 				D2CED491287B48290012802F /* Model */,
 				D2CED492287B482F0012802F /* Controllers */,
 				D2CED493287B483F0012802F /* Views */,
-				D2CED481287B47AD0012802F /* ViewController.swift */,
+				D2FF741E2883079700C6355B /* Extensions */,
 				D2CED486287B47AE0012802F /* Assets.xcassets */,
 				D2CED488287B47AE0012802F /* LaunchScreen.storyboard */,
 				D2CED48B287B47AE0012802F /* Info.plist */,
@@ -104,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				D2CED494287B48920012802F /* LoginViewController.swift */,
+				D2FF74152882F52500C6355B /* HeroesTableViewController.swift */,
+				D2FF742128831BED00C6355B /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -111,7 +125,10 @@
 		D2CED493287B483F0012802F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D2FF7419288301CF00C6355B /* TableViewCell */,
 				D2CED495287B48920012802F /* LoginViewController.xib */,
+				D2FF74162882F52500C6355B /* HeroesTableViewController.xib */,
+				D2FF742228831BED00C6355B /* DetailViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,6 +139,23 @@
 				D2FEFD21287CC73400F11358 /* DragonBallXibsTests.swift */,
 			);
 			path = DragonBallXibsTests;
+			sourceTree = "<group>";
+		};
+		D2FF7419288301CF00C6355B /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D2FF741A288301F200C6355B /* TableViewCell.swift */,
+				D2FF741B288301F200C6355B /* TableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		D2FF741E2883079700C6355B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D2FF741F288307A900C6355B /* UIImageViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,8 +240,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2CED48A287B47AE0012802F /* LaunchScreen.storyboard in Resources */,
+				D2FF742428831BED00C6355B /* DetailViewController.xib in Resources */,
+				D2FF741D288301F200C6355B /* TableViewCell.xib in Resources */,
 				D2CED487287B47AE0012802F /* Assets.xcassets in Resources */,
 				D2CED497287B48920012802F /* LoginViewController.xib in Resources */,
+				D2FF74182882F52500C6355B /* HeroesTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,10 +262,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2FF741C288301F200C6355B /* TableViewCell.swift in Sources */,
 				D2CED496287B48920012802F /* LoginViewController.swift in Sources */,
-				D2CED482287B47AD0012802F /* ViewController.swift in Sources */,
+				D2FF7420288307A900C6355B /* UIImageViewExtension.swift in Sources */,
 				D2CED47E287B47AD0012802F /* AppDelegate.swift in Sources */,
 				D2CED480287B47AD0012802F /* SceneDelegate.swift in Sources */,
+				D2FF74172882F52500C6355B /* HeroesTableViewController.swift in Sources */,
+				D2FF742328831BED00C6355B /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
