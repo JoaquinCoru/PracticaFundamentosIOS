@@ -13,6 +13,7 @@ class HeroesTableViewController: UITableViewController {
         super.viewDidLoad()
 
         title = "Heroes"
+        LocalDataModel.deleteToken()
         
         tableView?.register(
           UINib(nibName: "TableViewCell", bundle: nil),

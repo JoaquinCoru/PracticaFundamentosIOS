@@ -21,6 +21,9 @@
 		D2FF7420288307A900C6355B /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF741F288307A900C6355B /* UIImageViewExtension.swift */; };
 		D2FF742328831BED00C6355B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF742128831BED00C6355B /* DetailViewController.swift */; };
 		D2FF742428831BED00C6355B /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FF742228831BED00C6355B /* DetailViewController.xib */; };
+		D2FF742628833A5500C6355B /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF742528833A5500C6355B /* NetworkModel.swift */; };
+		D2FF742828833BD000C6355B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF742728833BCF00C6355B /* UIViewControllerExtension.swift */; };
+		D2FF742A28833F2300C6355B /* LocalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF742928833F2300C6355B /* LocalDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		D2FF741F288307A900C6355B /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageViewExtension.swift; path = ../../../../../KeepCoding/04.IOS.FUNDAMENTOS/6/DragonBall/DragonBall/Extensions/UIImageViewExtension.swift; sourceTree = "<group>"; };
 		D2FF742128831BED00C6355B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D2FF742228831BED00C6355B /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		D2FF742528833A5500C6355B /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		D2FF742728833BCF00C6355B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtension.swift; path = ../../../../../KeepCoding/04.IOS.FUNDAMENTOS/6/DragonBall/DragonBall/Extensions/UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		D2FF742928833F2300C6355B /* LocalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,8 @@
 		D2CED491287B48290012802F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D2FF742528833A5500C6355B /* NetworkModel.swift */,
+				D2FF742928833F2300C6355B /* LocalDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				D2FF741F288307A900C6355B /* UIImageViewExtension.swift */,
+				D2FF742728833BCF00C6355B /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -262,7 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2FF742628833A5500C6355B /* NetworkModel.swift in Sources */,
 				D2FF741C288301F200C6355B /* TableViewCell.swift in Sources */,
+				D2FF742828833BD000C6355B /* UIViewControllerExtension.swift in Sources */,
+				D2FF742A28833F2300C6355B /* LocalDataModel.swift in Sources */,
 				D2CED496287B48920012802F /* LoginViewController.swift in Sources */,
 				D2FF7420288307A900C6355B /* UIImageViewExtension.swift in Sources */,
 				D2CED47E287B47AD0012802F /* AppDelegate.swift in Sources */,
