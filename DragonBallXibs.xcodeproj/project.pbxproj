@@ -10,24 +10,46 @@
 		D2CED47E287B47AD0012802F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CED47D287B47AD0012802F /* AppDelegate.swift */; };
 		D2CED480287B47AD0012802F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CED47F287B47AD0012802F /* SceneDelegate.swift */; };
 		D2CED482287B47AD0012802F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CED481287B47AD0012802F /* ViewController.swift */; };
-		D2CED485287B47AD0012802F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CED483287B47AD0012802F /* Main.storyboard */; };
 		D2CED487287B47AE0012802F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2CED486287B47AE0012802F /* Assets.xcassets */; };
 		D2CED48A287B47AE0012802F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CED488287B47AE0012802F /* LaunchScreen.storyboard */; };
+		D2CED496287B48920012802F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CED494287B48920012802F /* LoginViewController.swift */; };
+		D2CED497287B48920012802F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2CED495287B48920012802F /* LoginViewController.xib */; };
+		D2FEFD22287CC73400F11358 /* DragonBallXibsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FEFD21287CC73400F11358 /* DragonBallXibsTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2FEFD23287CC73400F11358 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2CED472287B47AD0012802F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2CED479287B47AD0012802F;
+			remoteInfo = DragonBallXibs;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D2CED47A287B47AD0012802F /* DragonBallXibs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonBallXibs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CED47D287B47AD0012802F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2CED47F287B47AD0012802F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D2CED481287B47AD0012802F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D2CED484287B47AD0012802F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2CED486287B47AE0012802F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2CED489287B47AE0012802F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2CED48B287B47AE0012802F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2CED494287B48920012802F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D2CED495287B48920012802F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		D2FEFD1F287CC73400F11358 /* DragonBallXibsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonBallXibsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2FEFD21287CC73400F11358 /* DragonBallXibsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallXibsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D2CED477287B47AD0012802F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2FEFD1C287CC73400F11358 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				D2CED47C287B47AD0012802F /* DragonBallXibs */,
+				D2FEFD20287CC73400F11358 /* DragonBallXibsTests */,
 				D2CED47B287B47AD0012802F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				D2CED47A287B47AD0012802F /* DragonBallXibs.app */,
+				D2FEFD1F287CC73400F11358 /* DragonBallXibsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,13 +82,46 @@
 			children = (
 				D2CED47D287B47AD0012802F /* AppDelegate.swift */,
 				D2CED47F287B47AD0012802F /* SceneDelegate.swift */,
+				D2CED491287B48290012802F /* Model */,
+				D2CED492287B482F0012802F /* Controllers */,
+				D2CED493287B483F0012802F /* Views */,
 				D2CED481287B47AD0012802F /* ViewController.swift */,
-				D2CED483287B47AD0012802F /* Main.storyboard */,
 				D2CED486287B47AE0012802F /* Assets.xcassets */,
 				D2CED488287B47AE0012802F /* LaunchScreen.storyboard */,
 				D2CED48B287B47AE0012802F /* Info.plist */,
 			);
 			path = DragonBallXibs;
+			sourceTree = "<group>";
+		};
+		D2CED491287B48290012802F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2CED492287B482F0012802F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2CED494287B48920012802F /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D2CED493287B483F0012802F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2CED495287B48920012802F /* LoginViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D2FEFD20287CC73400F11358 /* DragonBallXibsTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2FEFD21287CC73400F11358 /* DragonBallXibsTests.swift */,
+			);
+			path = DragonBallXibsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +144,24 @@
 			productReference = D2CED47A287B47AD0012802F /* DragonBallXibs.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D2FEFD1E287CC73400F11358 /* DragonBallXibsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2FEFD27287CC73400F11358 /* Build configuration list for PBXNativeTarget "DragonBallXibsTests" */;
+			buildPhases = (
+				D2FEFD1B287CC73400F11358 /* Sources */,
+				D2FEFD1C287CC73400F11358 /* Frameworks */,
+				D2FEFD1D287CC73400F11358 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2FEFD24287CC73400F11358 /* PBXTargetDependency */,
+			);
+			name = DragonBallXibsTests;
+			productName = DragonBallXibsTests;
+			productReference = D2FEFD1F287CC73400F11358 /* DragonBallXibsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +174,10 @@
 				TargetAttributes = {
 					D2CED479287B47AD0012802F = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					D2FEFD1E287CC73400F11358 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = D2CED479287B47AD0012802F;
 					};
 				};
 			};
@@ -116,6 +195,7 @@
 			projectRoot = "";
 			targets = (
 				D2CED479287B47AD0012802F /* DragonBallXibs */,
+				D2FEFD1E287CC73400F11358 /* DragonBallXibsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,7 +207,14 @@
 			files = (
 				D2CED48A287B47AE0012802F /* LaunchScreen.storyboard in Resources */,
 				D2CED487287B47AE0012802F /* Assets.xcassets in Resources */,
-				D2CED485287B47AD0012802F /* Main.storyboard in Resources */,
+				D2CED497287B48920012802F /* LoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2FEFD1D287CC73400F11358 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +225,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2CED496287B48920012802F /* LoginViewController.swift in Sources */,
 				D2CED482287B47AD0012802F /* ViewController.swift in Sources */,
 				D2CED47E287B47AD0012802F /* AppDelegate.swift in Sources */,
 				D2CED480287B47AD0012802F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2FEFD1B287CC73400F11358 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2FEFD22287CC73400F11358 /* DragonBallXibsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		D2CED483287B47AD0012802F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D2CED484287B47AD0012802F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		D2FEFD24287CC73400F11358 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2CED479287B47AD0012802F /* DragonBallXibs */;
+			targetProxy = D2FEFD23287CC73400F11358 /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		D2CED488287B47AE0012802F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +387,6 @@
 				INFOPLIST_FILE = DragonBallXibs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +413,6 @@
 				INFOPLIST_FILE = DragonBallXibs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -331,6 +425,40 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D2FEFD25287CC73400F11358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joaquinco.DragonBallXibsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DragonBallXibs.app/DragonBallXibs";
+			};
+			name = Debug;
+		};
+		D2FEFD26287CC73400F11358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joaquinco.DragonBallXibsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DragonBallXibs.app/DragonBallXibs";
 			};
 			name = Release;
 		};
@@ -351,6 +479,15 @@
 			buildConfigurations = (
 				D2CED48F287B47AE0012802F /* Debug */,
 				D2CED490287B47AE0012802F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2FEFD27287CC73400F11358 /* Build configuration list for PBXNativeTarget "DragonBallXibsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2FEFD25287CC73400F11358 /* Debug */,
+				D2FEFD26287CC73400F11358 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
