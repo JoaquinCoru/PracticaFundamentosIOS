@@ -7,23 +7,47 @@
 
 import UIKit
 
+private enum Constants {
+  static let normalImageHeight = 200.0
+}
+
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    
+    @IBOutlet weak var imageHeight: NSLayoutConstraint!
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    private var hero:Hero?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scrollView.delegate = self
 
-        // Do any additional setup after loading the view.
+        guard let hero = hero else {
+          return
+        }
+        
+        self.title = hero.name
+        
+        self.imageView.setImage(url: hero.photo)
+        self.nameLabel.text = hero.name
+        self.descriptionTextView.text = hero.description
+    }
+    
+    func set(model: Hero) {
+      hero = model
     }
 
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+extension DetailViewController: UIScrollViewDelegate {
+  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    let correctedOffset = scrollView.contentOffset.y
+    imageHeight.constant = Constants.normalImageHeight - correctedOffset
+  }
 }

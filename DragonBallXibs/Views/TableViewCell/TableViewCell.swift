@@ -13,5 +13,9 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var heroName: UILabel!
     @IBOutlet weak var heroDescription: UILabel!
     
-    
+    func set(model: Hero) {
+      heroName.text = model.name
+      heroDescription.text = model.description
+      heroImage.setImage(url: model.photo)
+    }
 }

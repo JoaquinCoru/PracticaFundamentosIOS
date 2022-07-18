@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D20966A22885CD3D00FFB5BA /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20966A12885CD3D00FFB5BA /* HeroModel.swift */; };
 		D2CED47E287B47AD0012802F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CED47D287B47AD0012802F /* AppDelegate.swift */; };
 		D2CED480287B47AD0012802F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CED47F287B47AD0012802F /* SceneDelegate.swift */; };
 		D2CED487287B47AE0012802F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2CED486287B47AE0012802F /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D20966A12885CD3D00FFB5BA /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
 		D2CED47A287B47AD0012802F /* DragonBallXibs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonBallXibs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CED47D287B47AD0012802F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2CED47F287B47AD0012802F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			children = (
 				D2FF742528833A5500C6355B /* NetworkModel.swift */,
 				D2FF742928833F2300C6355B /* LocalDataModel.swift */,
+				D20966A12885CD3D00FFB5BA /* HeroModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				D2FF742628833A5500C6355B /* NetworkModel.swift in Sources */,
 				D2FF741C288301F200C6355B /* TableViewCell.swift in Sources */,
+				D20966A22885CD3D00FFB5BA /* HeroModel.swift in Sources */,
 				D2FF742828833BD000C6355B /* UIViewControllerExtension.swift in Sources */,
 				D2FF742A28833F2300C6355B /* LocalDataModel.swift in Sources */,
 				D2CED496287B48920012802F /* LoginViewController.swift in Sources */,
