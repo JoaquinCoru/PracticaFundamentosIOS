@@ -1,40 +1,32 @@
 //
-//  HeroesTableViewController.swift
+//  TransformationsTableViewController.swift
 //  DragonBallXibs
 //
-//  Created by Joaquín Corugedo Rodríguez on 16/7/22.
+//  Created by Joaquín Corugedo Rodríguez on 18/7/22.
 //
 
 import UIKit
 
-class HeroesTableViewController: UITableViewController {
+class TransformationsTableViewController: UITableViewController {
     
-    var heroes: [Hero] = []
+    private var transformations:[Transformation] = []
         
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        title = "Heroes"
         
+        title = "Transformaciones"
+
         tableView?.register(
           UINib(nibName: "TableViewCell", bundle: nil),
           forCellReuseIdentifier: "reuseIdentifier")
         
-        guard let token = LocalDataModel.getToken() else {
-          return
+        transformations.sort {
+            $0.name < $1.name
         }
-        
-        let networkModel = NetworkModel(token: token)
-        
-        networkModel.getHeroes { [weak self] heroes, _ in
-          guard let self = self else { return }
-          
-          self.heroes = heroes
-          
-          DispatchQueue.main.async {
-            self.tableView.reloadData()
-          }
-        }
+    }
+    
+    func setTransformations(transformations:[Transformation]){
+        self.transformations = transformations
     }
 
     // MARK: - Table view data source
@@ -46,27 +38,27 @@ class HeroesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return heroes.count
+        return transformations.count
     }
-
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as? TableViewCell else {
           return UITableViewCell()
         }
         
-        cell.set(model: heroes[indexPath.row])
+        cell.setTransformation(model: transformations[indexPath.row])
+        
         return cell
     }
-   
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         let nextVC = DetailViewController()
         
-        nextVC.set(model: heroes[indexPath.row])
+        nextVC.setTransformation(model: transformations[indexPath.row])
         
         navigationController?.pushViewController(nextVC, animated: true)
     }
+
+
     
 }

@@ -15,6 +15,7 @@
                 <outlet property="imageView" destination="tvw-uJ-GM3" id="XqN-Pc-IcA"/>
                 <outlet property="nameLabel" destination="G4z-gx-gc8" id="cDm-rH-KtW"/>
                 <outlet property="scrollView" destination="cFu-Lv-fci" id="uUN-fx-YxK"/>
+                <outlet property="transformsButton" destination="xjc-WB-iuc" id="P5Y-LN-3qm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -38,20 +39,30 @@
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qk4-DU-JLK">
                                     <rect key="frame" x="16" y="284" width="382" height="226.5"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                     <color key="textColor" systemColor="labelColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 </textView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjc-WB-iuc">
+                                    <rect key="frame" x="137" y="530.5" width="140" height="31"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="filled" title="Transformaciones"/>
+                                    <connections>
+                                        <action selector="onTransformationsTap:" destination="-1" eventType="touchUpInside" id="AmM-G3-Rfk"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
+                                <constraint firstItem="xjc-WB-iuc" firstAttribute="centerX" secondItem="BD2-8w-g4X" secondAttribute="centerX" id="4cD-uh-E9a"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="xjc-WB-iuc" secondAttribute="bottom" constant="40" id="6IS-71-k9y"/>
                                 <constraint firstItem="Qk4-DU-JLK" firstAttribute="leading" secondItem="BD2-8w-g4X" secondAttribute="leading" constant="16" id="6th-bZ-xzN"/>
                                 <constraint firstAttribute="trailing" secondItem="Qk4-DU-JLK" secondAttribute="trailing" constant="16" id="KND-yf-kld"/>
-                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Qk4-DU-JLK" secondAttribute="bottom" constant="40" id="Kx4-UA-rgO"/>
                                 <constraint firstItem="Qk4-DU-JLK" firstAttribute="top" secondItem="G4z-gx-gc8" secondAttribute="bottom" constant="20" id="Rgb-pK-skk"/>
                                 <constraint firstItem="G4z-gx-gc8" firstAttribute="top" secondItem="BD2-8w-g4X" secondAttribute="top" constant="240" id="TM3-sf-Kvy"/>
                                 <constraint firstItem="G4z-gx-gc8" firstAttribute="leading" secondItem="BD2-8w-g4X" secondAttribute="leading" constant="12" id="ilx-z5-blQ"/>
+                                <constraint firstItem="xjc-WB-iuc" firstAttribute="top" secondItem="Qk4-DU-JLK" secondAttribute="bottom" constant="20" id="r5z-Cr-yMC"/>
                             </constraints>
                         </view>
                     </subviews>

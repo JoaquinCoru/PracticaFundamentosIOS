@@ -20,29 +20,80 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var imageHeight: NSLayoutConstraint!
     @IBOutlet weak var scrollView: UIScrollView!
     
+    @IBOutlet weak var transformsButton: UIButton!
     private var hero:Hero?
+    private var transformation:Transformation?
+    
+    var transformations:[Transformation]=[]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        transformsButton.alpha = 0
+        
         scrollView.delegate = self
 
-        guard let hero = hero else {
-          return
+        
+        if let hero = hero {
+            self.title = hero.name
+            
+            self.imageView.setImage(url: hero.photo)
+            self.nameLabel.text = hero.name
+            self.descriptionTextView.text = hero.description
+            
+            checkTransformations()
         }
         
-        self.title = hero.name
+        if let transformation = transformation {
+            
+            self.imageView.setImage(url: transformation.photo)
+            self.nameLabel.text = transformation.name
+            self.descriptionTextView.text = transformation.description
+        }
         
-        self.imageView.setImage(url: hero.photo)
-        self.nameLabel.text = hero.name
-        self.descriptionTextView.text = hero.description
+
     }
+    
     
     func set(model: Hero) {
       hero = model
     }
+    
+    func setTransformation(model:Transformation){
+        transformation = model
+    }
+    
+    func checkTransformations(){
+        guard let token = LocalDataModel.getToken() else {
+          return
+        }
 
+        let networkModel = NetworkModel(token: token)
+        
+        networkModel.getTransformations(id: hero?.id ?? "") { [weak self] transformations, _ in
+            guard let self = self else { return }
+            
+            self.transformations = transformations
+            
+            DispatchQueue.main.async {
+                if !transformations.isEmpty {
+                    self.transformsButton.alpha = 1
+                }
+            }
+            
+        }
+    }
+
+
+    @IBAction func onTransformationsTap(_ sender: Any) {
+        
+        let nextVC = TransformationsTableViewController()
+        
+        nextVC.setTransformations(transformations: transformations)
+        
+        navigationController?.pushViewController(nextVC, animated: true)
+    }
 }
 
 extension DetailViewController: UIScrollViewDelegate {
