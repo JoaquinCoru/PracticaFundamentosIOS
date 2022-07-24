@@ -14,9 +14,11 @@
 		D21B13552889CFE7007A8F83 /* LocalDataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B13542889CFE7007A8F83 /* LocalDataModelTests.swift */; };
 		D21B13572889D15D007A8F83 /* NetworkModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B13562889D15D007A8F83 /* NetworkModelTests.swift */; };
 		D21B13592889D3E6007A8F83 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B13582889D3E6007A8F83 /* URLSessionMock.swift */; };
-		D21B135B2889D549007A8F83 /* heroes.json in Resources */ = {isa = PBXBuildFile; fileRef = D21B135A2889D549007A8F83 /* heroes.json */; };
 		D22FEB58288B2C7C002E2FD4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22FEB56288B2C7C002E2FD4 /* SettingsViewController.swift */; };
 		D22FEB59288B2C7C002E2FD4 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22FEB57288B2C7C002E2FD4 /* SettingsViewController.xib */; };
+		D2371682288D5AC900A45CFC /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2371681288D5AC900A45CFC /* UIImageViewExtension.swift */; };
+		D2371684288D5B0200A45CFC /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2371683288D5B0200A45CFC /* UIViewControllerExtension.swift */; };
+		D2371686288D5B3100A45CFC /* heroes.json in Resources */ = {isa = PBXBuildFile; fileRef = D2371685288D5B3100A45CFC /* heroes.json */; };
 		D2BCB2C8288A0EB1003299E2 /* transformations.json in Resources */ = {isa = PBXBuildFile; fileRef = D2BCB2C7288A0EB1003299E2 /* transformations.json */; };
 		D2CED47E287B47AD0012802F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CED47D287B47AD0012802F /* AppDelegate.swift */; };
 		D2CED480287B47AD0012802F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CED47F287B47AD0012802F /* SceneDelegate.swift */; };
@@ -28,11 +30,9 @@
 		D2FF74182882F52500C6355B /* HeroesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FF74162882F52500C6355B /* HeroesTableViewController.xib */; };
 		D2FF741C288301F200C6355B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF741A288301F200C6355B /* TableViewCell.swift */; };
 		D2FF741D288301F200C6355B /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FF741B288301F200C6355B /* TableViewCell.xib */; };
-		D2FF7420288307A900C6355B /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF741F288307A900C6355B /* UIImageViewExtension.swift */; };
 		D2FF742328831BED00C6355B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF742128831BED00C6355B /* DetailViewController.swift */; };
 		D2FF742428831BED00C6355B /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FF742228831BED00C6355B /* DetailViewController.xib */; };
 		D2FF742628833A5500C6355B /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF742528833A5500C6355B /* NetworkModel.swift */; };
-		D2FF742828833BD000C6355B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF742728833BCF00C6355B /* UIViewControllerExtension.swift */; };
 		D2FF742A28833F2300C6355B /* LocalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF742928833F2300C6355B /* LocalDataModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,9 +54,11 @@
 		D21B13542889CFE7007A8F83 /* LocalDataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataModelTests.swift; sourceTree = "<group>"; };
 		D21B13562889D15D007A8F83 /* NetworkModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModelTests.swift; sourceTree = "<group>"; };
 		D21B13582889D3E6007A8F83 /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
-		D21B135A2889D549007A8F83 /* heroes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = heroes.json; path = ../../../../KeepCoding/04.IOS.FUNDAMENTOS/6/DragonBall/DragonBallTests/heroes.json; sourceTree = "<group>"; };
 		D22FEB56288B2C7C002E2FD4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D22FEB57288B2C7C002E2FD4 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		D2371681288D5AC900A45CFC /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		D2371683288D5B0200A45CFC /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		D2371685288D5B3100A45CFC /* heroes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = heroes.json; sourceTree = "<group>"; };
 		D2BCB2C7288A0EB1003299E2 /* transformations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = transformations.json; sourceTree = "<group>"; };
 		D2CED47A287B47AD0012802F /* DragonBallXibs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonBallXibs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CED47D287B47AD0012802F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,11 +73,9 @@
 		D2FF74162882F52500C6355B /* HeroesTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroesTableViewController.xib; sourceTree = "<group>"; };
 		D2FF741A288301F200C6355B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		D2FF741B288301F200C6355B /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		D2FF741F288307A900C6355B /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageViewExtension.swift; path = ../../../../../KeepCoding/04.IOS.FUNDAMENTOS/6/DragonBall/DragonBall/Extensions/UIImageViewExtension.swift; sourceTree = "<group>"; };
 		D2FF742128831BED00C6355B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D2FF742228831BED00C6355B /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		D2FF742528833A5500C6355B /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
-		D2FF742728833BCF00C6355B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtension.swift; path = ../../../../../KeepCoding/04.IOS.FUNDAMENTOS/6/DragonBall/DragonBall/Extensions/UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		D2FF742928833F2300C6355B /* LocalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,7 +170,7 @@
 		D2FEFD20287CC73400F11358 /* DragonBallXibsTests */ = {
 			isa = PBXGroup;
 			children = (
-				D21B135A2889D549007A8F83 /* heroes.json */,
+				D2371685288D5B3100A45CFC /* heroes.json */,
 				D2BCB2C7288A0EB1003299E2 /* transformations.json */,
 				D21B13542889CFE7007A8F83 /* LocalDataModelTests.swift */,
 				D21B13562889D15D007A8F83 /* NetworkModelTests.swift */,
@@ -191,8 +191,8 @@
 		D2FF741E2883079700C6355B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D2FF741F288307A900C6355B /* UIImageViewExtension.swift */,
-				D2FF742728833BCF00C6355B /* UIViewControllerExtension.swift */,
+				D2371681288D5AC900A45CFC /* UIImageViewExtension.swift */,
+				D2371683288D5B0200A45CFC /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -294,7 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2BCB2C8288A0EB1003299E2 /* transformations.json in Resources */,
-				D21B135B2889D549007A8F83 /* heroes.json in Resources */,
+				D2371686288D5B3100A45CFC /* heroes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,16 +308,16 @@
 				D2FF742628833A5500C6355B /* NetworkModel.swift in Sources */,
 				D2FF741C288301F200C6355B /* TableViewCell.swift in Sources */,
 				D20966A22885CD3D00FFB5BA /* HeroModel.swift in Sources */,
-				D2FF742828833BD000C6355B /* UIViewControllerExtension.swift in Sources */,
 				D2FF742A28833F2300C6355B /* LocalDataModel.swift in Sources */,
 				D2CED496287B48920012802F /* LoginViewController.swift in Sources */,
-				D2FF7420288307A900C6355B /* UIImageViewExtension.swift in Sources */,
 				D2CED47E287B47AD0012802F /* AppDelegate.swift in Sources */,
 				D20966A42885E95B00FFB5BA /* TransformationModel.swift in Sources */,
+				D2371682288D5AC900A45CFC /* UIImageViewExtension.swift in Sources */,
 				D22FEB58288B2C7C002E2FD4 /* SettingsViewController.swift in Sources */,
 				D20966A72885F46C00FFB5BA /* TransformationsTableViewController.swift in Sources */,
 				D2CED480287B47AD0012802F /* SceneDelegate.swift in Sources */,
 				D2FF74172882F52500C6355B /* HeroesTableViewController.swift in Sources */,
+				D2371684288D5B0200A45CFC /* UIViewControllerExtension.swift in Sources */,
 				D2FF742328831BED00C6355B /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
