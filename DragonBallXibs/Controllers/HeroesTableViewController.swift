@@ -13,8 +13,6 @@ class HeroesTableViewController: UITableViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        title = "Heroes"
         
         tableView?.register(
           UINib(nibName: "TableViewCell", bundle: nil),

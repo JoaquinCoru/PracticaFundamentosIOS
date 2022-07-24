@@ -80,6 +80,7 @@ class DetailViewController: UIViewController {
                 if !transformations.isEmpty {
                     self.transformsButton.alpha = 1
                 }
+                
             }
             
         }

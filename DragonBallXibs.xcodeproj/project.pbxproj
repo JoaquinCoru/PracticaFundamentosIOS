@@ -15,6 +15,9 @@
 		D21B13572889D15D007A8F83 /* NetworkModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B13562889D15D007A8F83 /* NetworkModelTests.swift */; };
 		D21B13592889D3E6007A8F83 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B13582889D3E6007A8F83 /* URLSessionMock.swift */; };
 		D21B135B2889D549007A8F83 /* heroes.json in Resources */ = {isa = PBXBuildFile; fileRef = D21B135A2889D549007A8F83 /* heroes.json */; };
+		D22FEB58288B2C7C002E2FD4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22FEB56288B2C7C002E2FD4 /* SettingsViewController.swift */; };
+		D22FEB59288B2C7C002E2FD4 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22FEB57288B2C7C002E2FD4 /* SettingsViewController.xib */; };
+		D2BCB2C8288A0EB1003299E2 /* transformations.json in Resources */ = {isa = PBXBuildFile; fileRef = D2BCB2C7288A0EB1003299E2 /* transformations.json */; };
 		D2CED47E287B47AD0012802F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CED47D287B47AD0012802F /* AppDelegate.swift */; };
 		D2CED480287B47AD0012802F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CED47F287B47AD0012802F /* SceneDelegate.swift */; };
 		D2CED487287B47AE0012802F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2CED486287B47AE0012802F /* Assets.xcassets */; };
@@ -52,6 +55,9 @@
 		D21B13562889D15D007A8F83 /* NetworkModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModelTests.swift; sourceTree = "<group>"; };
 		D21B13582889D3E6007A8F83 /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
 		D21B135A2889D549007A8F83 /* heroes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = heroes.json; path = ../../../../KeepCoding/04.IOS.FUNDAMENTOS/6/DragonBall/DragonBallTests/heroes.json; sourceTree = "<group>"; };
+		D22FEB56288B2C7C002E2FD4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D22FEB57288B2C7C002E2FD4 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		D2BCB2C7288A0EB1003299E2 /* transformations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = transformations.json; sourceTree = "<group>"; };
 		D2CED47A287B47AD0012802F /* DragonBallXibs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonBallXibs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CED47D287B47AD0012802F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2CED47F287B47AD0012802F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +149,7 @@
 				D2FF74152882F52500C6355B /* HeroesTableViewController.swift */,
 				D2FF742128831BED00C6355B /* DetailViewController.swift */,
 				D20966A52885F46C00FFB5BA /* TransformationsTableViewController.swift */,
+				D22FEB56288B2C7C002E2FD4 /* SettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -155,6 +162,7 @@
 				D2FF74162882F52500C6355B /* HeroesTableViewController.xib */,
 				D2FF742228831BED00C6355B /* DetailViewController.xib */,
 				D20966A62885F46C00FFB5BA /* TransformationsTableViewController.xib */,
+				D22FEB57288B2C7C002E2FD4 /* SettingsViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				D21B135A2889D549007A8F83 /* heroes.json */,
+				D2BCB2C7288A0EB1003299E2 /* transformations.json */,
 				D21B13542889CFE7007A8F83 /* LocalDataModelTests.swift */,
 				D21B13562889D15D007A8F83 /* NetworkModelTests.swift */,
 				D21B13582889D3E6007A8F83 /* URLSessionMock.swift */,
@@ -272,6 +281,7 @@
 				D2CED48A287B47AE0012802F /* LaunchScreen.storyboard in Resources */,
 				D20966A82885F46C00FFB5BA /* TransformationsTableViewController.xib in Resources */,
 				D2FF742428831BED00C6355B /* DetailViewController.xib in Resources */,
+				D22FEB59288B2C7C002E2FD4 /* SettingsViewController.xib in Resources */,
 				D2FF741D288301F200C6355B /* TableViewCell.xib in Resources */,
 				D2CED487287B47AE0012802F /* Assets.xcassets in Resources */,
 				D2CED497287B48920012802F /* LoginViewController.xib in Resources */,
@@ -283,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2BCB2C8288A0EB1003299E2 /* transformations.json in Resources */,
 				D21B135B2889D549007A8F83 /* heroes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +314,7 @@
 				D2FF7420288307A900C6355B /* UIImageViewExtension.swift in Sources */,
 				D2CED47E287B47AD0012802F /* AppDelegate.swift in Sources */,
 				D20966A42885E95B00FFB5BA /* TransformationModel.swift in Sources */,
+				D22FEB58288B2C7C002E2FD4 /* SettingsViewController.swift in Sources */,
 				D20966A72885F46C00FFB5BA /* TransformationsTableViewController.swift in Sources */,
 				D2CED480287B47AD0012802F /* SceneDelegate.swift in Sources */,
 				D2FF74172882F52500C6355B /* HeroesTableViewController.swift in Sources */,

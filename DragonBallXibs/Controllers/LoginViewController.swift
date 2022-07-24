@@ -90,6 +90,9 @@ class LoginViewController: UIViewController {
                 
                 LocalDataModel.save(token: token)
                 
+                self?.userTextField.text = ""
+                self?.passwordTextField.text = ""
+                
                 self?.goToHeroesList()
             }
         
@@ -100,9 +103,25 @@ class LoginViewController: UIViewController {
     func goToHeroesList(){
         let heroesTableViewController = HeroesTableViewController()
         
+        let settingsViewController = SettingsViewController()
+        
         let navigationController = UINavigationController()
         
-        navigationController.setViewControllers([heroesTableViewController], animated: false)
+        let tabBarController = UITabBarController()
+        
+        tabBarController.title = "Heroes"
+        
+        heroesTableViewController.title = "Heroes"
+        heroesTableViewController.tabBarItem.image = UIImage(systemName: "table")
+        settingsViewController.title = "Settings"
+        settingsViewController.tabBarItem.image = UIImage(systemName: "gear")
+        
+        tabBarController.setViewControllers([heroesTableViewController,settingsViewController], animated: true)
+        
+        navigationController.setViewControllers([tabBarController], animated: true)
+        
+        
+     //   navigationController.setViewControllers([heroesTableViewController], animated: false)
         
         navigationController.modalPresentationStyle = .fullScreen
         
